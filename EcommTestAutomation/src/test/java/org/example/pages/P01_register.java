@@ -1,6 +1,6 @@
 package org.example.pages;
 
-import com.automation.step_definitions.Hooks;
+//import com.automation.step_definitions.Hooks;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

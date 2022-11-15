@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.573">
-    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="18.957">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.61">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with new valid data successfully" time="12.219">
         <system-out><![CDATA[Given user go to register page..............................................passed
+When user enters new valid registration data................................passed
+And user click register button..............................................passed
+Then register is successful.................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>

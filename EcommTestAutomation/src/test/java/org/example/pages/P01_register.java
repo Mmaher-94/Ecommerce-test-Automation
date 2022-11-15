@@ -4,6 +4,9 @@ package org.example.pages;
 import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import java.util.Random;
+
 public class P01_register {
     public String successMsg = "Your registration completed" ;
     public String registerActMsg ;
@@ -50,6 +53,18 @@ public class P01_register {
     {
         regMsgClr = Hooks.driver.findElement(By.className("result")).getCssValue("color");
         return regMsgClr ;
+    }
+    public String randomEmail() {
+        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 10) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString()+"@gmail.com";
+        return saltStr;
+
     }
 
 

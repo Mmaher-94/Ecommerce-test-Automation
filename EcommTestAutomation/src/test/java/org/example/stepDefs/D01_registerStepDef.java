@@ -27,7 +27,7 @@ public class D01_registerStepDef {
        register.genderBtn().click();
        register.firstName().sendKeys("auto");
        register.lastName().sendKeys("test");
-       register.email().sendKeys("karelo7720@lidely.com");
+       register.email().sendKeys(register.randomEmail());
        register.password().sendKeys("P@ssw0rd");
        register.confirmPassword().sendKeys("P@ssw0rd");
 

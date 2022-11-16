@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.61">
-    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with new valid data successfully" time="12.219">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="32.688">
+    <testcase classname="F01_Register | users could register with new accounts" name="guest user could register with new valid data successfully" time="12.78">
         <system-out><![CDATA[Given user go to register page..............................................passed
 When user enters new valid registration data................................passed
 And user click register button..............................................passed
 Then register is successful.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="9.817">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid account data.....................................passed
+And user press login button.................................................passed
+Then user login successfully................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="9.642">
+        <system-out><![CDATA[Given user go to login page.................................................passed
+When user login with invalid account data...................................passed
+And user press login button.................................................passed
+Then user login unsuccessfully..............................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
